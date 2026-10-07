@@ -1,0 +1,67 @@
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(assets/dm-sans-normal-400.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(assets/dm-sans-normal-500.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'DM Serif Display';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(assets/dm-serif-display-italic-400.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(assets/dm-serif-display-normal-400.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(assets/montserrat-normal-300.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(assets/montserrat-normal-400.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(assets/montserrat-normal-500.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(assets/montserrat-normal-600.ttf) format('truetype');
+}
+:root{--heading:#1a1a2e;--body:#6b6b80;--eyebrow:#9397c9;--faint:#eeedf8;--muted:#aaaabc;--panel:#f8f8fc;--nav:#5a6b7c;--page:1300px;--content:1140px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#fff;color:var(--body);font:17px/1.85 'DM Sans',sans-serif}a{color:inherit;text-underline-offset:4px}button{font:inherit;cursor:pointer}img{display:block;max-width:100%}p,h1,h2,h3,figure{margin:0}a,button{touch-action:manipulation}a:focus-visible,button:focus-visible,.gallery:focus-visible{outline:3px solid #5c61a0;outline-offset:5px}.skip-link{position:fixed;top:-70px;left:16px;background:#fff;padding:8px 16px;z-index:20}.skip-link:focus{top:12px}
+.header{height:98px}.nav{max-width:var(--content);height:100%;margin:auto;display:flex;align-items:center;justify-content:space-between;font-family:Montserrat,sans-serif}.brand{display:flex;gap:10px;align-items:center;padding:0 23px;text-decoration:none;font-size:12px;color:var(--nav)}.brand img{width:35.17px;height:35.59px}.nav-links{display:flex;align-items:center}.nav-links a{padding:9px 20px;font-size:12px;line-height:20px;letter-spacing:1px;text-transform:uppercase;text-decoration:none;color:var(--nav);opacity:.6;font-weight:500}.nav-links a[aria-current]{color:#1a1b1f;opacity:1;font-weight:600}.nav-links a:hover,footer a:hover{opacity:1;color:#5c61a0}.menu-toggle{display:none}
+.hero{max-width:var(--content);margin:auto;padding:92px 0 120px;display:grid;grid-template-columns:45fr 50fr;gap:60px;align-items:center}.portrait{aspect-ratio:513/508.64;display:flex;align-items:center}.portrait img{width:100%;height:96.07%;object-fit:fill}.hello{color:var(--eyebrow);font:13px/28px Montserrat,sans-serif;letter-spacing:1.3px;margin-bottom:12px}.intro h1{font:400 64px/1.05 'DM Serif Display',serif;color:var(--heading);padding-top:9.5px;margin-bottom:28px;white-space:nowrap}.tagline{font:italic 28px/1.3 'DM Serif Display',serif;margin-bottom:33px}.tagline span{color:#5c61a0}.intro>p:not(.hello):not(.tagline){margin-bottom:23.215px}.intro strong{font-weight:500;color:var(--heading)}.buttons{display:flex;gap:16px;margin-top:24px;font-family:Montserrat,sans-serif}.button{display:inline-flex;padding:12px 24px 14px;border-radius:100px;font-size:16px;line-height:28px;transition:background .2s,transform .2s}.primary{background:var(--heading);color:#fff}.secondary{border:1px solid var(--faint);color:var(--heading)}.button:hover{transform:translateY(-2px);background:#5c61a0;color:white}
+.section{max-width:var(--page);margin:0 auto;padding:100px 80px}.eyebrow{font:400 13px/28px 'DM Sans',sans-serif;text-transform:uppercase;letter-spacing:1.82px;color:var(--eyebrow);margin-bottom:14px}h2:not(.eyebrow){font:400 36px/1.2 'DM Serif Display',serif;color:var(--heading);margin-bottom:40px}.body-copy{max-width:640px}.body-copy p{margin-bottom:24px}.body-copy p:last-child{margin-bottom:0}.story{background:var(--panel)}.story .body-copy{min-height:456px}.process-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:2px;background:var(--faint);margin-bottom:60px}.process-grid article{background:white;padding:40px 32px;min-height:358px}.step-number{display:block;font:400 48px/1 'DM Serif Display',serif;color:var(--faint);margin-bottom:20px}.process-grid h3{font:400 16px/28px 'DM Sans',sans-serif;color:var(--heading);margin-bottom:10px}.process-grid p{font-size:13px;line-height:21.45px}.iceberg figcaption{font-size:14px;font-style:italic;line-height:21px;color:var(--muted);text-align:center}.iceberg img{width:860px;max-width:calc(100% - 240px);height:auto;margin-left:120px}.palette .imported-spacer{height:20px}.palette .body-copy{margin-bottom:24px}.gallery{overflow-x:auto;scrollbar-width:none;height:380px}.gallery::-webkit-scrollbar{display:none}.gallery-track{display:flex;gap:16px;width:max-content;animation:marquee 60s linear infinite;transform:translateX(-68.54px)}.gallery-set{display:flex;gap:16px}.gallery img{width:280px;height:380px;border-radius:12px;object-fit:cover;flex:none}.gallery-set img:first-child{object-position:center}.gallery:hover .gallery-track,.gallery:focus-within .gallery-track,.gallery.is-paused .gallery-track{animation-play-state:paused}.gallery-toggle{display:block;margin:10px 0 -37px auto;border:0;background:transparent;color:var(--body);font-size:12px;padding:3px 0;text-decoration:underline;text-underline-offset:4px}@keyframes marquee{from{transform:translateX(-68.54px)}to{transform:translateX(calc(-50% - 76.54px))}}
+.contact{max-width:var(--page);margin:auto;display:flex;justify-content:center;padding:80px 24px 60px}.contact h2:not(.eyebrow){font:300 44px/62px Montserrat,sans-serif;color:var(--nav);margin:0}.contact-links{display:flex;align-items:end;margin-top:10px}.contact-links>a:first-child{font:400 44px/46px Montserrat,sans-serif;color:#1a1b1f;text-decoration:none}.contact-links>a:hover{color:#5c61a0}.contact-icon{width:44px;height:44px;display:grid;place-items:center}.contact-icon img{width:24px;height:24px}footer{max-width:var(--page);margin:auto;border-top:1px solid #6b7280;padding:40px 50px;display:flex;align-items:center;justify-content:space-between;font-family:Montserrat,sans-serif}footer p{font-size:16px;line-height:28px;color:#9ca3af}footer nav{display:flex;gap:40px}footer a{font-size:12px;line-height:20px;letter-spacing:1px;text-transform:uppercase;text-decoration:none;opacity:.6;color:#1a1b1f}
+@media(min-width:1600px){.story{position:relative;left:80px}}
+@media(max-width:1300px){.nav,.hero{margin-left:6%;margin-right:6%}.section{padding:80px 6%}.hero{gap:40px;padding-top:70px;padding-bottom:90px}.intro h1{font-size:54px}.process-grid article{padding:32px 22px}.iceberg img{max-width:90%;margin:0 auto}footer{margin:0 4%;padding:35px 3%}}
+@media(max-width:900px){.hero{grid-template-columns:1fr 1fr;gap:32px}.intro h1{font-size:42px;white-space:normal}.tagline{font-size:23px;margin-bottom:22px}.intro{font-size:15px}.hero .buttons{flex-wrap:wrap;margin-top:18px}.button{padding:10px 18px;font-size:14px}.process-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.process-grid article{min-height:280px}.story .body-copy{min-height:0}.section{padding-top:70px;padding-bottom:70px}.contact h2:not(.eyebrow){font-size:36px}.contact-links>a:first-child{font-size:36px}}
+@media(max-width:600px){.header{height:80px}.nav{position:relative}.brand{padding:0;font-size:12px}.menu-toggle{display:flex;align-items:center;gap:10px;font:12px Montserrat,sans-serif;text-transform:uppercase;letter-spacing:1px;border:1px solid var(--faint);border-radius:30px;background:#fff;color:var(--heading);padding:10px 14px}.nav-links{display:none;position:absolute;top:70px;right:0;left:0;z-index:10;flex-direction:column;align-items:stretch;background:#fff;border:1px solid var(--faint);box-shadow:0 12px 24px #1a1a2e0a;padding:12px}.nav-links.is-open{display:flex}.nav-links a{padding:16px}.hero{grid-template-columns:1fr;padding-top:32px;padding-bottom:60px;gap:32px}.portrait{max-width:420px;width:100%;margin:auto}.intro{font-size:17px}.intro h1{font-size:48px;margin-bottom:20px}.hello{margin-bottom:6px}.tagline{font-size:25px;margin-bottom:26px}.section{padding:56px 6%}h2:not(.eyebrow){font-size:32px;margin-bottom:28px}.process-grid{grid-template-columns:1fr;margin-bottom:40px}.process-grid article{min-height:0;padding:28px 24px}.process-grid p{font-size:14px;line-height:1.75}.iceberg figcaption{font-size:12px;margin-bottom:12px}.iceberg img{max-width:100%;width:100%}.gallery,.gallery img{height:320px}.gallery img{width:236px}.palette .imported-spacer{height:0}.contact{padding:60px 6%}.contact h2:not(.eyebrow){font-size:30px;line-height:1.4}.contact-links>a:first-child{font-size:32px}footer{padding:28px 2%;align-items:flex-start;gap:20px;flex-direction:column}footer p{font-size:14px}footer nav{gap:28px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.gallery-track{animation:none;transform:none}.button{transition:none}}
