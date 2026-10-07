@@ -1,0 +1,32 @@
+/* Phone refinements for the original case-study layouts. */
+@media (max-width: 600px) {
+  .hero-visual.remote-care, .hero-visual.recipe,
+  .groups-row, .what-next-grid, .step-pipeline.journey-card,
+  .qoutes-grid, .insight--grid, .grid-2, .into-grid,
+  .solution-callout-grid {
+    grid-template-columns: minmax(0, 1fr) !important;
+    grid-auto-columns: minmax(0, 1fr) !important;
+    gap: 20px;
+  }
+  .groups-row, .what-next-grid { display: grid; }
+  .hero-visual.remote-care > *, .hero-visual.recipe > *,
+  .groups-row > *, .what-next-grid > *, .step-pipeline > *,
+  .qoutes-grid > *, .insight--grid > *, .grid-2 > *,
+  .into-grid > *, .solution-callout-grid > * {
+    grid-column: auto !important;
+    grid-row: auto !important;
+    min-width: 0;
+    max-width: 100%;
+  }
+  .header-text, .header-text.long-text, .ai-project.care-remote,
+  .div-block-12, .insight--grid, .content-div {
+    width: 100%; max-width: 100%; min-width: 0;
+    margin-left: 0; margin-right: 0;
+  }
+  .header-text .heading, .header-text .heading-2 { width: auto; max-width: 100%; }
+  .quote-marks.open, .quote-marks.close {
+    position: static; margin: 0; align-self: flex-start;
+  }
+  .content-block, .task-chips-wrapper, .rectangle-chip { min-width: 0; overflow-wrap: anywhere; }
+  .content-div, .sec6-insight-text { overflow-wrap: anywhere; }
+}

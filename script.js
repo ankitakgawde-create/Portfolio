@@ -18,6 +18,7 @@ document.addEventListener('keydown', event => {
     menu.focus();
   }
 });
+if (document.querySelector('.gallery')) {
 const gallery = document.querySelector('.gallery');
 const galleryTrack = document.querySelector('.gallery-track');
 const duplicate = document.querySelector('.gallery-set').cloneNode(true);
@@ -39,3 +40,5 @@ pause.addEventListener('click', () => {
   pause.setAttribute('aria-pressed', String(paused));
   pause.textContent = paused ? 'Play photos' : 'Pause photos';
 });
+
+}
